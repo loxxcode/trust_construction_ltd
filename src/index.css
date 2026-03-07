@@ -6,6 +6,55 @@
 
 @layer base {
   :root {
+    --background: 40 20% 96%;
+    --foreground: 30 15% 12%;
+
+    --card: 40 15% 100%;
+    --card-foreground: 30 15% 12%;
+
+    --popover: 40 15% 100%;
+    --popover-foreground: 30 15% 12%;
+
+    --primary: 38 70% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 10% 90%;
+    --secondary-foreground: 30 15% 25%;
+
+    --muted: 35 10% 92%;
+    --muted-foreground: 30 10% 40%;
+
+    --accent: 38 70% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 12% 85%;
+    --input: 35 12% 85%;
+    --ring: 38 70% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 40 15% 98%;
+    --sidebar-foreground: 30 15% 12%;
+    --sidebar-primary: 38 70% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 10% 92%;
+    --sidebar-accent-foreground: 30 15% 25%;
+    --sidebar-border: 35 12% 85%;
+    --sidebar-ring: 38 70% 45%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --gradient-gold: linear-gradient(135deg, hsl(38 70% 45%), hsl(45 80% 55%));
+    --gradient-dark: linear-gradient(180deg, hsl(40 20% 96%), hsl(40 15% 100%));
+    --shadow-gold: 0 4px 30px -8px hsl(38 70% 45% / 0.25);
+    --shadow-card: 0 8px 40px -12px hsl(0 0% 0% / 0.1);
+  }
+
+  .dark {
     --background: 30 15% 7%;
     --foreground: 40 20% 92%;
 
@@ -34,8 +83,6 @@
     --input: 30 10% 20%;
     --ring: 38 70% 50%;
 
-    --radius: 0.5rem;
-
     --sidebar-background: 30 12% 10%;
     --sidebar-foreground: 40 20% 92%;
     --sidebar-primary: 38 70% 50%;
@@ -44,9 +91,6 @@
     --sidebar-accent-foreground: 40 20% 85%;
     --sidebar-border: 30 10% 20%;
     --sidebar-ring: 38 70% 50%;
-
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'DM Sans', sans-serif;
 
     --gradient-gold: linear-gradient(135deg, hsl(38 70% 50%), hsl(45 80% 60%));
     --gradient-dark: linear-gradient(180deg, hsl(30 15% 7%), hsl(30 12% 12%));
