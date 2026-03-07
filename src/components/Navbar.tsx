@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
+  { label: "About", href: "#about" },
   { label: "Sanitary Ware", href: "#sanitary" },
   { label: "Lighting", href: "#lighting" },
   { label: "Flooring", href: "#flooring" },
@@ -19,7 +20,7 @@ export const Navbar = () => {
           <span className="text-gradient-gold">MATÉRIAUX</span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -37,13 +38,13 @@ export const Navbar = () => {
           </a>
         </div>
 
-        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
+        <button className="lg:hidden text-foreground" onClick={() => setOpen(!open)}>
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {open && (
-        <div className="md:hidden bg-card border-t border-border px-6 py-4 space-y-3">
+        <div className="lg:hidden bg-card border-t border-border px-6 py-4 space-y-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
