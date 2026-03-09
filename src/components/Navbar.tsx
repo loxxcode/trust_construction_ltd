@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
+import logo from "../assets/logo.jpeg";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -18,7 +19,7 @@ export const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#" className="text-2xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
-          <span className="text-gradient-gold">MATÉRIAUX</span>
+          <img src={logo} alt="Logo" width={100} height={50} className="text-gradient-gold" />
         </a>
 
         <div className="hidden lg:flex items-center gap-6">

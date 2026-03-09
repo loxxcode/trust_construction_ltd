@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
 export const Footer = () => {
   return (
@@ -6,7 +7,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
         <div>
           <h3 className="text-2xl font-bold text-gradient-gold mb-4" style={{ fontFamily: "var(--font-display)" }}>
-            MATÉRIAUX
+            <img src={logo} alt="Company Logo" className="h-10 w-auto" />
           </h3>
           <p className="text-muted-foreground leading-relaxed">
             Your trusted partner for premium building materials, interior solutions, and decorative finishes.
