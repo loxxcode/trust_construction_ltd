@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductCategorySection } from "@/components/ProductCategorySection";
+import { LocationSection } from "@/components/LocationSection";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -33,6 +34,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <LocationSection />
 
       <Footer />
     </div>
