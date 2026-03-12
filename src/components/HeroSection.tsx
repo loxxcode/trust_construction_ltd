@@ -1,15 +1,31 @@
 import { ArrowDown } from "lucide-react";
+import { useEffect, useState } from "react";
+import heroBanner from "@/assets/hero-banner.jpg";
+import flooringImage from "@/assets/flooring.jpg";
+import wallImage from "@/assets/decoration.jpg";
+import lightingImage from "@/assets/lighting.jpg";
 
-interface HeroSectionProps {
-  image: string;
-}
+const heroImages = [heroBanner, flooringImage, wallImage, lightingImage];
 
-export const HeroSection = ({ image }: HeroSectionProps) => {
+export const HeroSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (heroImages.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+    }, 8000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentImage = heroImages[currentIndex];
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 transition-opacity duration-700">
         <img
-          src={image}
+          src={currentImage}
           alt="Premium building materials showroom"
           className="w-full h-full object-cover"
           loading="eager"
@@ -25,7 +41,7 @@ export const HeroSection = ({ image }: HeroSectionProps) => {
           Elevate Your <br />
           <span className="text-gradient-gold">Living Space</span>
         </h1>
-        <p className="text-foreground text-xlg md:text-xl max-w-2xl mx-auto mb-10">
+        <p className="text-white text-xlg md:text-xl max-w-2xl mx-auto mb-10">
           Discover our curated collection of sanitary ware, lighting, flooring, and decorative panels — crafted for elegance and durability.
         </p>
         <a

@@ -1,4 +1,3 @@
-import heroBanner from "@/assets/hero-banner.jpg";
 import { categories } from "@/data/products";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
@@ -11,7 +10,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <HeroSection image={heroBanner} />
+      <HeroSection />
 
       <AboutSection />
 
