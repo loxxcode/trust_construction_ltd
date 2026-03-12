@@ -16,7 +16,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-lg border-b border-border dark:bg-background/80">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#" className="text-2xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
           <img src={logo} alt="Logo" width={100} height={50} className="text-gradient-gold" />
@@ -27,7 +27,7 @@ export const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-foreground hover:font-bold transition-colors"
             >
               {link.label}
             </a>
@@ -41,9 +41,12 @@ export const Navbar = () => {
           <ThemeToggle />
         </div>
 
-        <button className="lg:hidden text-foreground" onClick={() => setOpen(!open)}>
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-3 lg:hidden">
+          <ThemeToggle />
+          <button className="text-foreground" onClick={() => setOpen(!open)}>
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -53,7 +56,7 @@ export const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="block text-sm font-medium text-foreground hover:text-foreground transition-colors"
             >
               {link.label}
             </a>

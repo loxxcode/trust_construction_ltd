@@ -12,7 +12,9 @@ export const Footer = () => {
     message: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -32,7 +34,10 @@ export const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-black/10 text-white py-10 px-6">
+    <footer
+      id="contact"
+      className="bg-black/90 text-white py-10 px-6 dark:bg-black/10"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Logo Section */}
         <div className="mb-8">

@@ -3,10 +3,10 @@ import heroBanner from "@/assets/hero-banner.jpg";
 
 export const AboutSection = () => {
   const stats = [
-    { icon: Award, label: "Years Experience", value: "15+" },
-    { icon: Globe, label: "Countries Served", value: "30+" },
+    { icon: Award, label: "Years Experience", value: "8+" },
+    { icon: Globe, label: "Countries Served", value: "6+" },
     { icon: Truck, label: "Products Delivered", value: "50K+" },
-    { icon: Shield, label: "Warranty Years", value: "10" },
+    { icon: Shield, label: "Warranty Years", value: "1" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export const AboutSection = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6" style={{ fontFamily: "var(--font-display)" }}>
               About <span className="text-gradient-gold">Us</span>
             </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <div className="space-y-4 text-foreground leading-relaxed">
               <p>
                 We are a leading supplier of premium building materials and interior finishing solutions. For over 15 years, we have been partnering with architects, designers, contractors, and homeowners to bring visionary spaces to life.
               </p>

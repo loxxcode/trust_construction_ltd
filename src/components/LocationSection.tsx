@@ -31,16 +31,9 @@ export const LocationSection = () => {
     <section className="py-16 px-4 bg-muted/40" id="locations">
       <div className="max-w-7xl mx-auto grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1.5fr)] items-start">
         <div className="space-y-6">
-          <p className="text-primary text-sm font-medium tracking-[0.2em] uppercase">
-            Visit Our Branches
-          </p>
           <h2 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
-            Find Us in Kigali
+            Find Us
           </h2>
-          <p className="text-muted-foreground max-w-xl">
-            Choose a branch to see its exact location on Google Maps. You can zoom, drag and
-            explore the area, or open directions directly in Google Maps.
-          </p>
 
           <div className="space-y-4">
             {branches.map((branch) => (
