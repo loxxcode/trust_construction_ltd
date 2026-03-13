@@ -14,11 +14,11 @@ const branches = [
   {
     id: "gisozi",
     label: "Gisozi Branch",
-    address: "Umukundo Center, Gisozi, Kigali",
+    address: "Companion House Room #7, Gisozi, Kigali",
     embedUrl:
-      "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d127599.775758294!2d30.097408!3d-1.9562495999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2srw!4v1773169155563!5m2!1sen!2srw",
+      "https://www.google.com/maps/embed?pb=!3m2!1sen!2srw!4v1773389214866!5m2!1sen!2srw!6m8!1m7!1sLoOhP62RM1O0PX3m51dSgA!2m2!1d-1.924592512766222!2d30.07038662900572!3f331.3546936287711!4f3.61618932424075!5f0.7820865974627469",
     mapsUrl:
-      "https://www.google.com/maps?pb=!1m17!1m12!1m3!1d127599.775758294!2d30.097408!3d-1.9562495999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2srw!4v1773169155563!5m2!1sen!2srw",
+      "https://www.google.com/maps?pb=!3m2!1sen!2srw!4v1773389214866!5m2!1sen!2srw!6m8!1m7!1sLoOhP62RM1O0PX3m51dSgA!2m2!1d-1.924592512766222!2d30.07038662900572!3f331.3546936287711!4f3.61618932424075!5f0.7820865974627469",
   },
 ] as const;
 
