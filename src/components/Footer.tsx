@@ -1,4 +1,14 @@
-import { Phone, Mail, MapPin, Clock, Menu } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Menu,
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+} from "lucide-react";
 import { useState } from "react";
 import { useToast } from "../hooks/use-toast";
 import logo from "../assets/logo.jpeg";
@@ -13,10 +23,10 @@ export const Footer = () => {
   });
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
@@ -28,7 +38,8 @@ export const Footer = () => {
     console.log("Form submitted:", formData);
     toast({
       title: "Success!",
-      description: "Your message has been sent successfully. We'll get back to you soon!",
+      description:
+        "Your message has been sent successfully. We'll get back to you soon!",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
@@ -42,7 +53,11 @@ export const Footer = () => {
         {/* Logo Section */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-8">
-            <img src={logo} alt="Trust Construction Company" className="h-12 w-auto" />
+            <img
+              src={logo}
+              alt="Trust Construction Company"
+              className="h-12 w-auto"
+            />
           </div>
         </div>
 
@@ -50,16 +65,20 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-8">
           {/* Contact Info */}
           <div>
-            <h3 className="text-3xl font-bold text-amber-400 mb-8">Contact Us</h3>
-            
+            <h3 className="text-3xl font-bold text-amber-400 mb-8">
+              Contact Us
+            </h3>
+
             {/* Branches */}
-            <div className="space-y-8 mb-8">
+            <div className="space-y-4 mb-4">
               <div>
                 <div className="flex items-start gap-3 mb-2">
                   <MapPin className="text-amber-400 shrink-0 mt-1" size={20} />
                   <div>
                     <p className="font-bold text-white">Kicukiro Branch:</p>
-                    <p className="text-gray-300">Chez John Building, Kicukiro, Kigali</p>
+                    <p className="text-gray-300">
+                      Chez John Building, Kicukiro, Kigali
+                    </p>
                   </div>
                 </div>
               </div>
@@ -69,7 +88,9 @@ export const Footer = () => {
                   <MapPin className="text-amber-400 shrink-0 mt-1" size={20} />
                   <div>
                     <p className="font-bold text-white">Gisozi Branch:</p>
-                    <p className="text-gray-300">Umukundo Center, Gisozi, Kigali</p>
+                    <p className="text-gray-300">
+                      Umukundo Center, Gisozi, Kigali
+                    </p>
                   </div>
                 </div>
               </div>
@@ -89,14 +110,39 @@ export const Footer = () => {
 
               <div className="flex items-center gap-3">
                 <Clock className="text-amber-400 shrink-0" size={20} />
-                <span className="text-gray-300">Mon-Fri: 9:00 AM - 6:00 PM</span>
+                <span className="text-gray-300">
+                  Mon-Fri: 9:00 AM - 6:00 PM
+                </span>
+              </div>
+
+              {/* Social Media */}
+              <div className="pt-4">
+                <p className="font-bold text-amber-400 mb-2">
+                  Follow Us
+                </p>
+                <div className="flex gap-4">
+                  <a href="#" className="text-gray-300 hover:text-amber-400">
+                    <Facebook size={20} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-amber-400">
+                    <Twitter size={20} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-amber-400">
+                    <Instagram size={20} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-amber-400">
+                    <Youtube size={20} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div>
-            <h3 className="text-2xl font-bold text-amber-400 mb-6">Send us a message</h3>
+            <h3 className="text-2xl font-bold text-amber-400 mb-6">
+              Send us a message
+            </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"
