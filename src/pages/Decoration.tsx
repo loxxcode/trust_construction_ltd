@@ -39,10 +39,6 @@ const Decoration = () => {
           {decorationImages.length === 0 ? (
             <div className="max-w-2xl mx-auto rounded-xl border border-border bg-card p-6 text-center">
               <p className="text-foreground font-semibold mb-2">No decoration images found</p>
-              <p className="text-muted-foreground text-sm">
-                Add your decoration images to <code>src/assets</code> (not inside{" "}
-                <code>src/assets/products</code>) and they will appear here automatically.
-              </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

@@ -9,9 +9,9 @@ const navLinks = [
   { label: "Sanitary Ware", to: "/#sanitary" },
   { label: "Lighting", to: "/#lighting" },
   { label: "Flooring", to: "/#flooring" },
-  { label: "Decoration", to: "/decoration" },
   { label: "Ceiling", to: "/#ceiling" },
   { label: "Wall", to: "/#wall" },
+  { label: "Decoration", to: "/decoration" },
 ];
 
 export const Navbar = () => {

@@ -23,6 +23,7 @@ import rattanCeilingImg from "@/assets/products/rattan-ceiling.jpg";
 import pvcCeilingImg from "@/assets/products/pvc-ceiling.jpg";
 import aluminumCeilingImg from "@/assets/products/aluminum-ceiling.jpg";
 import spcWallImg from "@/assets/products/spc-wall.jpg";
+import wpcWallImg from "@/assets/products/wpc-wall.jpg";
 import carbonWallImg from "@/assets/products/carbon-wall.jpg";
 
 export interface Product {
@@ -192,12 +193,12 @@ export const categories: Category[] = [
         description: "Decorative PVC panels with ornate patterns — lightweight, waterproof, and affordable.",
         features: ["Waterproof", "Lightweight", "Easy to clean", "Budget friendly"],
       },
-      {
-        name: "Aluminum Ceiling Bars",
-        image: aluminumCeilingImg,
-        description: "Linear aluminum ceiling grid systems for commercial and modern residential spaces.",
-        features: ["Fire resistant", "Corrosion proof", "Modern aesthetic", "Modular grid"],
-      },
+      // {
+      //   name: "Aluminum Ceiling Bars",
+      //   image: aluminumCeilingImg,
+      //   description: "Linear aluminum ceiling grid systems for commercial and modern residential spaces.",
+      //   features: ["Fire resistant", "Corrosion proof", "Modern aesthetic", "Modular grid"],
+      // },
     ],
   },
   {
@@ -213,7 +214,7 @@ export const categories: Category[] = [
       },
       {
         name: "WPC Wall Panels",
-        image: spcWallImg,
+        image: wpcWallImg,
         description: "Wood-Plastic Composite panels offering warmth and texture for interior walls.",
         features: ["Eco composite", "Sound insulating", "Anti-mold", "Multiple patterns"],
       },
