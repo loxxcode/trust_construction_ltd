@@ -6,7 +6,12 @@ export const ScrollToHash = () => {
 
   useEffect(() => {
     const hash = location.hash;
-    if (!hash) return;
+    if (!hash) {
+      // When navigating to a new route without hash (e.g. /decoration),
+      // scroll back to the top so content doesn't start at the footer.
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
 
     const id = hash.replace("#", "");
     // Wait for route content to render before scrolling
