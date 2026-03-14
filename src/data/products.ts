@@ -5,7 +5,7 @@ import bidetImg from "@/assets/products/bidet.jpg";
 import bathroomCabinetImg from "@/assets/products/bathroom-cabinet.jpg";
 import washBasinImg from "@/assets/products/wash-basin.jpg";
 import showerImg from "@/assets/products/shower.jpg";
-import showerKitImg from "@/assets/products/shower-kit.jpg";
+import concealedshowerImg from "@/assets/products/concealed-shower.jpg";
 import waterHeaterImg from "@/assets/products/water-heater.jpg";
 import lightFanImg from "@/assets/products/light-fan.jpg";
 import electricalImg from "@/assets/products/electrical.jpg";
@@ -77,8 +77,8 @@ export const categories: Category[] = [
         features: ["Tempered glass", "Anti-limescale coating", "Custom sizes", "Minimal hardware"],
       },
       {
-        name: "Shower Kit",
-        image: showerKitImg,
+        name: "Concealed Shower",
+        image: concealedshowerImg,
         description: "Complete shower systems with rain head, handheld sprayer, and thermostatic mixer.",
         features: ["Rain shower head", "Handheld sprayer", "Thermostatic control", "Chrome finish"],
       },

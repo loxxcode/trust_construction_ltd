@@ -17,7 +17,6 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <p className="text-primary text-sm font-medium tracking-[0.2em] uppercase mb-2">What We Offer</p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-display)" }}>
               Our <span className="text-gradient-gold">Product Range</span>
             </h2>

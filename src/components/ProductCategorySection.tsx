@@ -9,7 +9,7 @@ export const ProductCategorySection = ({ category }: ProductCategorySectionProps
   return (
     <section id={category.id} className="scroll-mt-24">
       <div className="mb-10">
-        <p className="text-primary text-sm font-medium tracking-[0.2em] uppercase mb-2">Collection</p>
+        {/* <p className="text-primary text-sm font-medium tracking-[0.2em] uppercase mb-2">Collection</p> */}
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-display)" }}>
           {category.title}
         </h2>

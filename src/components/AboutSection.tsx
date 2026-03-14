@@ -14,7 +14,6 @@ export const AboutSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-primary text-sm font-medium tracking-[0.2em] uppercase mb-2">Who We Are</p>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6" style={{ fontFamily: "var(--font-display)" }}>
               About <span className="text-gradient-gold">Us</span>
             </h2>

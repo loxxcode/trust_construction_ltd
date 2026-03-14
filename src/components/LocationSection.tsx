@@ -31,7 +31,7 @@ export const LocationSection = () => {
     <section className="py-16 px-4 bg-muted/40" id="locations">
       <div className="max-w-7xl mx-auto grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1.5fr)] items-start">
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
+          <h2 className="text-3xl text-amber-400 md:text-4xl font-bold">
             Find Us
           </h2>
 

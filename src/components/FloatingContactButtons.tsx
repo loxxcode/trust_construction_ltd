@@ -16,23 +16,21 @@ export const FloatingContactButtons = () => {
   };
 
   return (
-    <div className="fixed right-4 bottom-4 flex flex-col gap-3 z-50">
+    <div className="fixed right-1 bottom-4 flex flex-col gap-3 z-50">
       <button
         type="button"
         onClick={handleCallClick}
-        className="flex items-center gap-2 rounded-full bg-[#00b050] text-white px-5 py-2 shadow-lg hover:bg-[#00c75a] transition-colors"
+        className="flex items-center gap-2 rounded-full bg-[#00b050] text-white font-bold px-2 py-2 shadow-lg hover:bg-[#00c75a] transition-colors"
       >
-        <Phone size={18} />
-        <span className="text-sm font-semibold">Call Us</span>
+        <Phone size={24} />
       </button>
 
       <button
         type="button"
         onClick={handleWhatsAppClick}
-        className="flex items-center gap-2 rounded-full bg-[#25D366] text-white px-5 py-2 shadow-lg hover:bg-[#1ebe5d] transition-colors"
+        className="flex items-center gap-2 rounded-full bg-[#25D366] text-white px-2 py-2 shadow-lg hover:bg-[#1ebe5d] transition-colors"
       >
-        <MessageCircle size={18} />
-        <span className="text-sm font-semibold">WhatsApp</span>
+        <MessageCircle size={24} />
       </button>
     </div>
   );
