@@ -25,6 +25,7 @@ import aluminumCeilingImg from "@/assets/products/aluminum-ceiling.jpg";
 import spcWallImg from "@/assets/products/spc-wall.jpg";
 import wpcWallImg from "@/assets/products/wpc-wall.jpg";
 import carbonWallImg from "@/assets/products/carbon-wall.jpg";
+import carpetTilesImg from "@/assets/products/orient-carpet.jpg";
 
 export interface Product {
   name: string;
@@ -53,7 +54,7 @@ export const categories: Category[] = [
         features: ["Dual flush system", "Soft-close seat", "Easy-clean glaze", "Water efficient"],
       },
       {
-        name: "Bidet",
+        name: "Concealed Water Closet",
         image: bidetImg,
         description: "Elegant floor-standing and wall-mounted bidets for enhanced personal hygiene.",
         features: ["Chrome faucet included", "Anti-bacterial glaze", "Wall-mount option", "Compact design"],
@@ -165,6 +166,12 @@ export const categories: Category[] = [
       {
         name: "WPC Decking",
         image: wpcDeckingImg,
+        description: "Wood-Plastic Composite outdoor decking that resists rot, termites, and UV fading.",
+        features: ["Rot resistant", "UV stabilized", "Low maintenance", "Splinter free"],
+      },
+      {
+        name: "Carpet tiles",
+        image: carpetTilesImg,
         description: "Wood-Plastic Composite outdoor decking that resists rot, termites, and UV fading.",
         features: ["Rot resistant", "UV stabilized", "Low maintenance", "Splinter free"],
       },

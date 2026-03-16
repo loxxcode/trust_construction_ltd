@@ -1,7 +1,8 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 
-const PHONE_NUMBER = "+250788843505";
-const WHATSAPP_NUMBER = "+250788843505"; // Use full international format if needed, e.g. 250788843505
+const PHONE_NUMBER = "+250788302678";
+const WHATSAPP_NUMBER = "+250788302678";
 
 export const FloatingContactButtons = () => {
   const handleCallClick = () => {
@@ -30,7 +31,7 @@ export const FloatingContactButtons = () => {
         onClick={handleWhatsAppClick}
         className="flex items-center gap-2 rounded-full bg-[#25D366] text-white px-2 py-2 shadow-lg hover:bg-[#1ebe5d] transition-colors"
       >
-        <MessageCircle size={24} />
+        <SiWhatsapp size={24} />
       </button>
     </div>
   );

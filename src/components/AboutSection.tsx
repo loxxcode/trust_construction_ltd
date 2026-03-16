@@ -10,11 +10,11 @@ export const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="scroll-mt-24 py-20 px-4">
+    <section id="about" className="scroll-mt-24 py-7 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6" style={{ fontFamily: "var(--font-display)" }}>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 font-sans">
               About <span className="text-gradient-gold">Us</span>
             </h2>
             <div className="space-y-4 text-foreground leading-relaxed">

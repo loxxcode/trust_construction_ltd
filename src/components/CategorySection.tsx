@@ -8,7 +8,7 @@ interface CategorySectionProps {
 
 export const CategorySection = ({ id, title, image, items, reversed }: CategorySectionProps) => {
   return (
-    <div id={id} className="scroll-mt-24">
+    <div id={id} className="scroll-mt-20">
       <div className={`flex flex-col ${reversed ? "lg:flex-row-reverse" : "lg:flex-row"} gap-10 items-center`}>
         <div className="lg:w-1/2 w-full">
           <div className="relative overflow-hidden rounded-xl shadow-card group">
