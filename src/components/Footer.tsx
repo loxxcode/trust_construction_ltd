@@ -62,10 +62,10 @@ export const Footer = () => {
         </div>
 
         {/* Main Content */}
-        <div className="grid md:grid-cols-2 gap-12 mb-8">
+        <div className="grid md:grid-cols-2 gap-12 mb-6">
           {/* Contact Info */}
           <div>
-            <h3 className="text-3xl font-bold text-amber-400 mb-8">
+            <h3 className="text-3xl font-bold text-amber-400 mb-8 font-sans">
               Contact Us
             </h3>
 
@@ -140,7 +140,7 @@ export const Footer = () => {
 
           {/* Contact Form */}
           <div>
-            <h3 className="text-2xl font-bold text-amber-400 mb-6">
+            <h3 className="text-2xl font-bold text-amber-400 mb-6 font-sans">
               Send us a message
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
