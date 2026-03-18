@@ -28,6 +28,7 @@ import spcWallImg from "@/assets/products/spc-wall.jpg";
 import wpcWallImg from "@/assets/products/wpc-wall.jpg";
 import carbonWallImg from "@/assets/products/carbon-wall.jpg";
 import carpetTilesImg from "@/assets/products/orient-carpet.jpg";
+import allFoolingImg from "@/assets/products/all-flooring.jpg";
 
 export interface Product {
   name: string;
@@ -201,6 +202,18 @@ export const categories: Category[] = [
         description: "Wood-Plastic Composite outdoor decking that resists rot, termites, and UV fading.",
         features: ["Rot resistant", "UV stabilized", "Low maintenance", "Splinter free"],
       },
+      {
+        name: "All Flooring Accessories",
+        image: allFoolingImg,
+        description: "A complete range of flooring accessories designed to enhance durability, installation, and finish for all types of floors.",
+        features: [
+          "Durable and long-lasting materials",
+          "Easy-to-install components",
+          "Protects against moisture and wear",
+          "Compatible with multiple flooring types",
+          "Low maintenance and safe for families"
+        ],
+      }
     ],
   },
   {
