@@ -41,16 +41,8 @@ export const AboutSection = () => {
           </div>
 
           <div className="relative">
-            <div className="rounded-xl overflow-hidden shadow-card w-full aspect-video h-[500px]">
-            <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="w-full h-full object-cover"
->
-  <source src="/videos/demo.mp4" type="video/mp4" />
-</video>
+            <div className="rounded-xl overflow-hidden shadow-card">
+              <img src={heroBanner} alt="About Us" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-card max-w-xs hidden lg:block">
               <p className="text-gradient-gold font-bold text-lg font-sans">Our Mission</p>
