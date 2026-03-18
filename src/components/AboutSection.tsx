@@ -19,10 +19,10 @@ export const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-foreground leading-relaxed">
               <p>
-                We are a leading supplier of premium building materials and interior finishing solutions. For over 15 years, we have been partnering with architects, designers, contractors, and homeowners to bring visionary spaces to life.
+                We are a leading supplier of premium building materials and interior finishing solutions. For over 8 years, we have been partnering with architects, designers, contractors, and homeowners to bring visionary spaces to life.
               </p>
               <p>
-                Our curated portfolio spans sanitary ware, modern lighting, durable flooring, and decorative ceiling and wall panels — all sourced from world-class manufacturers and rigorously tested for quality.
+                Our curated portfolio spans sanitary ware, modern lighting, durable flooring, decorative ceiling and wall panels — all sourced from world-class manufacturers and rigorously tested for quality.
               </p>
               <p>
                 From concept to completion, our expert team provides personalized guidance, competitive pricing, and reliable delivery to ensure your project exceeds expectations.
@@ -33,7 +33,7 @@ export const AboutSection = () => {
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
                   <stat.icon className="w-6 h-6 text-primary mx-auto mb-2" />
-                  <p className="text-2xl font-bold text-foreground" style={{ fontFamily: "var(--font-display)" }}>{stat.value}</p>
+                  <p className="text-2xl font-bold text-foreground font-sans">{stat.value}</p>
                   <p className="text-xs text-muted-foreground mt-1">{stat.label}</p>
                 </div>
               ))}
@@ -41,16 +41,19 @@ export const AboutSection = () => {
           </div>
 
           <div className="relative">
-            <div className="rounded-xl overflow-hidden shadow-card">
-              <img
-                src={heroBanner}
-                alt="Our showroom"
-                className="w-full h-96 lg:h-[500px] object-cover"
-                loading="lazy"
-              />
+            <div className="rounded-xl overflow-hidden shadow-card w-full aspect-video h-[500px]">
+            <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full h-full object-cover"
+>
+  <source src="/videos/demo.mp4" type="video/mp4" />
+</video>
             </div>
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-card max-w-xs hidden lg:block">
-              <p className="text-gradient-gold font-bold text-lg" style={{ fontFamily: "var(--font-display)" }}>Our Mission</p>
+              <p className="text-gradient-gold font-bold text-lg font-sans">Our Mission</p>
               <p className="text-muted-foreground text-sm mt-2">
                 To deliver exceptional building materials that inspire creativity and stand the test of time.
               </p>

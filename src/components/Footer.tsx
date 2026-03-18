@@ -75,7 +75,7 @@ export const Footer = () => {
                 <div className="flex items-start gap-3 mb-2">
                   <MapPin className="text-amber-400 shrink-0 mt-1" size={20} />
                   <div>
-                    <p className="font-bold text-white">Kicukiro Branch:</p>
+                    <p className="font-bold text-white">Kicukiro Branch</p>
                     <p className="text-gray-300">
                       Chez John Building, Kicukiro, Kigali
                     </p>
@@ -87,9 +87,9 @@ export const Footer = () => {
                 <div className="flex items-start gap-3 mb-2">
                   <MapPin className="text-amber-400 shrink-0 mt-1" size={20} />
                   <div>
-                    <p className="font-bold text-white">Gisozi Branch:</p>
+                    <p className="font-bold text-white">Gisozi Branch</p>
                     <p className="text-gray-300">
-                      Umukundo Center, Gisozi, Kigali
+                      Companion House Room #7, Gisozi, Kigali
                     </p>
                   </div>
                 </div>

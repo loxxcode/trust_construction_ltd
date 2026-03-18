@@ -15,7 +15,7 @@ export const HeroSection = () => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % heroImages.length);
-    }, 8000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

@@ -2,9 +2,11 @@
 
 import waterClosetImg from "@/assets/products/water-closet.jpg";
 import bidetImg from "@/assets/products/bidet.jpg";
+import concealedImg from "@/assets/products/Concealed-Water.jpg";
 import bathroomCabinetImg from "@/assets/products/bathroom-cabinet.jpg";
 import washBasinImg from "@/assets/products/wash-basin.jpg";
 import showerImg from "@/assets/products/shower.jpg";
+import showerKitImg from "@/assets/products/shower-kit.jpg";
 import concealedshowerImg from "@/assets/products/concealed-shower.jpg";
 import waterHeaterImg from "@/assets/products/water-heater.jpg";
 import lightFanImg from "@/assets/products/light-fan.jpg";
@@ -55,6 +57,18 @@ export const categories: Category[] = [
       },
       {
         name: "Concealed Water Closet",
+        image: concealedImg,
+        description: "Modern concealed water closet designed for a sleek, space-saving bathroom look with a hidden cistern system.",
+        features: [
+          "Concealed cistern for a minimalist finish",
+          "Dual-flush system for water efficiency",
+          "Soft-close seat cover",
+          "Durable ceramic with anti-bacterial glaze",
+          "Wall-mounted design for easy cleaning"
+        ],
+      },
+      {
+        name: "Bidet Faucet",
         image: bidetImg,
         description: "Elegant floor-standing and wall-mounted bidets for enhanced personal hygiene.",
         features: ["Chrome faucet included", "Anti-bacterial glaze", "Wall-mount option", "Compact design"],
@@ -89,6 +103,18 @@ export const categories: Category[] = [
         description: "Energy-efficient tankless and storage water heaters for instant hot water.",
         features: ["Instant heating", "Energy efficient", "Digital display", "Safety cut-off"],
       },
+      {
+        name: "Shower Kit",
+        image: showerKitImg,
+        description: "Complete shower kit designed to deliver a comfortable and modern bathing experience with stylish and durable components.",
+        features: [
+          "High-pressure shower head",
+          "Adjustable hand shower",
+          "Durable stainless steel hose",
+          "Corrosion-resistant finish",
+          "Easy installation system"
+        ],
+      }
     ],
   },
   {
@@ -200,12 +226,12 @@ export const categories: Category[] = [
         description: "Decorative PVC panels with ornate patterns — lightweight, waterproof, and affordable.",
         features: ["Waterproof", "Lightweight", "Easy to clean", "Budget friendly"],
       },
-      // {
-      //   name: "Aluminum Ceiling Bars",
-      //   image: aluminumCeilingImg,
-      //   description: "Linear aluminum ceiling grid systems for commercial and modern residential spaces.",
-      //   features: ["Fire resistant", "Corrosion proof", "Modern aesthetic", "Modular grid"],
-      // },
+      {
+        name: "Aluminum Ceiling Bars",
+        image: aluminumCeilingImg,
+        description: "Linear aluminum ceiling grid systems for commercial and modern residential spaces.",
+        features: ["Fire resistant", "Corrosion proof", "Modern aesthetic", "Modular grid"],
+      },
     ],
   },
   {
