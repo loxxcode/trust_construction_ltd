@@ -27,8 +27,9 @@ import aluminumCeilingImg from "@/assets/products/aluminum-ceiling.jpg";
 import spcWallImg from "@/assets/products/spc-wall.jpg";
 import wpcWallImg from "@/assets/products/wpc-wall.jpg";
 import carbonWallImg from "@/assets/products/carbon-wall.jpg";
-import carpetTilesImg from "@/assets/products/orient-carpet.jpg";
+import carpetTilesImg from "@/assets/products/carpet-tiles.jpg";
 import allFoolingImg from "@/assets/products/all-flooring.jpg";
+import allWallImg from "@/assets/products/all-wallpanel.jpg";
 
 export interface Product {
   name: string;
@@ -209,9 +210,7 @@ export const categories: Category[] = [
         features: [
           "Durable and long-lasting materials",
           "Easy-to-install components",
-          "Protects against moisture and wear",
           "Compatible with multiple flooring types",
-          "Low maintenance and safe for families"
         ],
       }
     ],
@@ -267,6 +266,12 @@ export const categories: Category[] = [
       {
         name: "Carbon Sheet Wall Panels",
         image: carbonWallImg,
+        description: "Ultra-thin carbon fiber sheet panels for a sleek, contemporary wall finish.",
+        features: ["Ultra lightweight", "High strength", "Modern look", "Heat resistant"],
+      },
+      {
+        name: "All Wall Panels",
+        image: allWallImg,
         description: "Ultra-thin carbon fiber sheet panels for a sleek, contemporary wall finish.",
         features: ["Ultra lightweight", "High strength", "Modern look", "Heat resistant"],
       },
