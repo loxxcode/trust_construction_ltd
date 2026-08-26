@@ -105,7 +105,7 @@ export const Footer = () => {
 
               <div className="flex items-center gap-3">
                 <Mail className="text-amber-400 shrink-0" size={20} />
-                <span className="text-gray-300">richmu7@yahoo.fr</span>
+                <span className="text-gray-300">trustconstructionltd@outlook.com</span>
               </div>
 
               <div className="flex items-center gap-3">
@@ -121,16 +121,16 @@ export const Footer = () => {
                   Follow Us
                 </p>
                 <div className="flex gap-4">
-                  <a href="#" className="text-gray-300 hover:text-amber-400">
+                  <a href="https://web.facebook.com/profile.php?id=61593990112440" target="_blank" className="text-gray-300 hover:text-amber-400">
                     <Facebook size={20} />
                   </a>
-                  <a href="#" className="text-gray-300 hover:text-amber-400">
+                  <a href="https://x.com/trust_construct" target="_blank" className="text-gray-300 hover:text-amber-400">
                     <Twitter size={20} />
                   </a>
-                  <a href="#" className="text-gray-300 hover:text-amber-400">
+                  <a href="https://www.instagram.com/trust_constructionltd/" target="_blank" className="text-gray-300 hover:text-amber-400">
                     <Instagram size={20} />
                   </a>
-                  <a href="#" className="text-gray-300 hover:text-amber-400">
+                  <a href="#" target="_blank" className="text-gray-300 hover:text-amber-400">
                     <Youtube size={20} />
                   </a>
                 </div>

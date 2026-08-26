@@ -1,54 +1,50 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import logo from "../assets/logo.jpeg";
+import { Link } from "react-router-dom";
 
 const navLinks = [
+  { label: "Home", to: "/" },
+  { label: "Products", to: "/products" },
+  { label: "Services", to: "/services" },
   { label: "About", to: "/#about" },
-  { label: "Sanitary Ware", to: "/#sanitary" },
-  { label: "Lighting", to: "/#lighting" },
-  { label: "Flooring", to: "/#flooring" },
-  { label: "Ceiling", to: "/#ceiling" },
-  { label: "Wall", to: "/#wall" },
-  { label: "Decoration", to: "/decoration" },
+  { label: "Contact", to: "/#contact" },
+  
 ];
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-lg border-b border-border dark:bg-background/80">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link to="/" className="text-2xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
-          <img src={logo} alt="Logo" width={100} height={50} className="text-gradient-gold" />
-        </Link>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+      <div className="max-w-7xl mx-auto relative flex items-center justify-between px-6 py-4">
+        <div className="flex items-center">
+          <Link to="/" className="text-2xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
+            <img src={logo} alt="Logo" width={100} height={50} className="text-gradient-gold" />
+          </Link>
+        </div>
 
-        <div className="hidden lg:flex items-center gap-6">
+        {/* centered links on large screens */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="text-sm font-medium text-foreground hover:font-bold transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/#contact"
-            className="bg-gradient-gold text-primary-foreground px-5 py-2 rounded-md text-sm font-semibold hover:opacity-90 transition-opacity"
-          >
-            Contact Us
-          </Link>
+        </div>
+
+        <div className="hidden lg:flex items-center gap-6">
           <ThemeToggle />
         </div>
 
-        <div className="flex items-center gap-3 lg:hidden">
-          <ThemeToggle />
-          <button className="text-foreground" onClick={() => setOpen(!open)}>
-            {open ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+        <button className="lg:hidden text-foreground" onClick={() => setOpen(!open)}>
+          {open ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
       {open && (
@@ -58,18 +54,18 @@ export const Navbar = () => {
               key={link.to}
               to={link.to}
               onClick={() => setOpen(false)}
-              className="block text-sm font-medium text-foreground hover:text-foreground transition-colors"
+              className="block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/#contact"
+          <a
+            href="#contact"
             onClick={() => setOpen(false)}
             className="block bg-gradient-gold text-primary-foreground px-5 py-2 rounded-md text-sm font-semibold text-center"
           >
             Contact Us
-          </Link>
+          </a>
         </div>
       )}
     </nav>
