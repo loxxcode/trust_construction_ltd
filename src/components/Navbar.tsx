@@ -25,8 +25,8 @@ export const Navbar = () => {
           </Link>
         </div>
 
-        {/* centered links on large screens */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center gap-6">
+        {/* centered links on medium+ screens */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.to}
@@ -38,17 +38,17 @@ export const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden lg:flex items-center gap-6">
+        {/* right-side actions: theme + mobile menu toggle */}
+        <div className="flex items-center gap-3">
           <ThemeToggle />
+          <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
-
-        <button className="lg:hidden text-foreground" onClick={() => setOpen(!open)}>
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
 
       {open && (
-        <div className="lg:hidden bg-card border-t border-border px-6 py-4 space-y-3">
+        <div className="md:hidden bg-card border-t border-border px-6 py-4 space-y-3">
           {navLinks.map((link) => (
             <Link
               key={link.to}
@@ -59,13 +59,6 @@ export const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
-            href="#contact"
-            onClick={() => setOpen(false)}
-            className="block bg-gradient-gold text-primary-foreground px-5 py-2 rounded-md text-sm font-semibold text-center"
-          >
-            Contact Us
-          </a>
         </div>
       )}
     </nav>
