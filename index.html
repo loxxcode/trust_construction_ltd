@@ -17,6 +17,50 @@
     <meta name="twitter:title" content="Trust Construction Company — Premium Building Materials" />
     <meta name="twitter:description" content="Discover premium sanitary ware, lighting, flooring, ceiling and wall decoration panels for elegant interiors." />
     <meta name="twitter:image" content="/og-screenshot.png" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Structured data (JSON-LD). Replace placeholders (https://example.com, phone, address, sameAs) with your real values -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Trust Construction Company",
+          "url": "https://example.com",
+          "logo": "https://example.com/assets/logo.jpeg",
+          "sameAs": []
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Trust Construction Company",
+          "image": "https://example.com/assets/logo.jpeg",
+          "@id": "https://example.com/#business",
+          "url": "https://example.com",
+          "telephone": "+000000000",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Replace street address",
+            "addressLocality": "City",
+            "addressRegion": "Region",
+            "postalCode": "ZIP",
+            "addressCountry": "Country"
+          },
+          "priceRange": "$$",
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://example.com",
+          "name": "Trust Construction Company",
+          "publisher": {
+            "@id": "https://example.com/#business"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body>
