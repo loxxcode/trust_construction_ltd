@@ -51,7 +51,7 @@ export const Footer = () => {
     >
       <div className="max-w-6xl mx-auto">
         {/* Logo Section */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <div className="flex items-center gap-3 mb-8">
             <img
               src={logo}
@@ -59,7 +59,7 @@ export const Footer = () => {
               className="h-12 w-auto"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-12 mb-6">

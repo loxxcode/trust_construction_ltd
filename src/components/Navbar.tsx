@@ -17,7 +17,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-7xl mx-auto relative flex items-center justify-between px-6 py-4">
         <div className="flex items-center">
           <Link to="/" className="text-2xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
