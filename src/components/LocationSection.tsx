@@ -7,9 +7,9 @@ const branches = [
     label: "Kicukiro Branch",
     address: "Chez John Building, Kicukiro, Kigali",
     embedUrl:
-      "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d127599.775758294!2d30.097408!3d-1.9562495999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2srw!4v1773169155563!5m2!1sen!2srw",
+      "https://www.google.com/maps/embed?pb=!4v1787900419652!6m8!1m7!1sbYd_oS2fNTQCERjIPjVDAA!2m2!1d-1.96863462018301!2d30.09646808052272!3f27.46082241241783!4f-4.27124841768439!5f0.7820865974627469",
     mapsUrl:
-      "https://www.google.com/maps?pb=!1m17!1m12!1m3!1d127599.775758294!2d30.097408!3d-1.9562495999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2srw!4v1773169155563!5m2!1sen!2srw",
+      "https://www.google.com/maps/embed?pb=!4v1787900419652!6m8!1m7!1sbYd_oS2fNTQCERjIPjVDAA!2m2!1d-1.96863462018301!2d30.09646808052272!3f27.46082241241783!4f-4.27124841768439!5f0.7820865974627469",
   },
   {
     id: "gisozi",
