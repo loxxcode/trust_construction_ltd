@@ -5,7 +5,6 @@ import {
   Clock,
   Menu,
   Facebook,
-  Twitter,
   Instagram,
   Youtube,
 } from "lucide-react";
@@ -124,13 +123,13 @@ export const Footer = () => {
                   <a href="https://web.facebook.com/profile.php?id=61593990112440" target="_blank" className="text-gray-300 hover:text-amber-400">
                     <Facebook size={20} />
                   </a>
-                  <a href="https://x.com/trust_construct" target="_blank" className="text-gray-300 hover:text-amber-400">
-                    <Twitter size={20} />
+                  <a href="https://x.com/trust_construct" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-amber-400 flex items-center">
+                    <span className="text-lg font-bold leading-none">𝕏</span>
                   </a>
                   <a href="https://www.instagram.com/trust_constructionltd/" target="_blank" className="text-gray-300 hover:text-amber-400">
                     <Instagram size={20} />
                   </a>
-                  <a href="#" target="_blank" className="text-gray-300 hover:text-amber-400">
+                  <a href="https://www.youtube.com/@trustconstructionltd" target="_blank" className="text-gray-300 hover:text-amber-400">
                     <Youtube size={20} />
                   </a>
                 </div>
