@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { SeoMeta } from "@/components/SeoMeta";
 
 const decorationAssets = import.meta.glob("@/assets/decorations/**/*.{png,jpg,jpeg,webp}", {
   eager: true,
@@ -18,6 +19,11 @@ const decorationImages = Object.entries(decorationAssets)
 const Decoration = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SeoMeta
+        title="Interior Decoration Gallery"
+        description="Explore wall panels, ceiling panels, decorative finishes and home styling inspiration from Trust Construction Company Rwanda."
+        path="/decoration"
+      />
       <Navbar />
 
       <main className="pt-28 pb-16 px-4">

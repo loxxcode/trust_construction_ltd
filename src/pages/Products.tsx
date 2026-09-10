@@ -2,12 +2,18 @@ import { categories } from "@/data/products";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
+import { SeoMeta } from "@/components/SeoMeta";
 
 const Products = () => {
   const allProducts = categories.flatMap((c) => c.products.map((p) => ({ ...p, category: c.title })));
 
   return (
     <div className="min-h-screen bg-background">
+      <SeoMeta
+        title="Building Materials Products"
+        description="Browse Trust Construction Company Rwanda flooring, lighting, sanitary ware, ceiling panels, wall panels and interior finishing products."
+        path="/products"
+      />
       <Navbar />
 
       <main className="pt-28 pb-16 px-4">

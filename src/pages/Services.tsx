@@ -1,9 +1,15 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { SeoMeta } from "@/components/SeoMeta";
 
 const Services = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SeoMeta
+        title="Construction Supply & Installation Services"
+        description="Supply, installation, consultation and maintenance services for construction materials and interior finishing projects in Kigali, Rwanda."
+        path="/services"
+      />
       <Navbar />
       <main className="pt-28 pb-16 px-4">
         <div className="max-w-7xl mx-auto text-center">

@@ -8,6 +8,7 @@
   import { LocationSection } from "@/components/LocationSection";
   import { Footer } from "@/components/Footer";
   import { ScrollToHash } from "@/components/ScrollToHash";
+  import { SeoMeta } from "@/components/SeoMeta";
 
   const Index = () => {
     // build recommended: one per category, plus three additional distinct products
@@ -17,6 +18,11 @@
     const recommended = [...perCategory, ...extras];
     return (
       <div className="min-h-screen bg-background">
+        <SeoMeta
+          title="Trust Construction Company Rwanda"
+          description="Building materials supplier in Kigali, Rwanda for flooring, sanitary ware, ceiling panels, lighting, and interior decoration products."
+          path="/"
+        />
         <ScrollToHash />
         <Navbar />
         <HeroSection />

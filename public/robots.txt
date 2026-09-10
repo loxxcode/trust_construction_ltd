@@ -14,4 +14,4 @@ User-agent: *
 Allow: /
 
 # Sitemap reference
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://trustconstructionltd.com/sitemap.xml
