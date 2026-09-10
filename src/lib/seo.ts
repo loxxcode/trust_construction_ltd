@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Trust Construction Company",
   shortName: "Trust Construction",
-  url: "https://trustconstructionltd.com",
-  logo: "https://trustconstructionltd.com/assets/logo.jpeg",
+  url: "https://www.trustconstructionltd.com",
+  logo: "https://www.trustconstructionltd.com/assets/logo.jpeg",
   email: "trustconstructionltd@outlook.com",
   phone: "+250 788 302 678",
   address: {
