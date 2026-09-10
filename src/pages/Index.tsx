@@ -19,9 +19,16 @@
     return (
       <div className="min-h-screen bg-background">
         <SeoMeta
-          title="Trust Construction Company Rwanda"
-          description="Building materials supplier in Kigali, Rwanda for flooring, sanitary ware, ceiling panels, lighting, and interior decoration products."
+          title="Trust Construction Rwanda"
+          description="Trust Construction Rwanda supplies trusted construction materials, building materials, home improvement materials, renovation services and interior finishing products from Kigali branches."
           path="/"
+          keywords={[
+            "building construction Rwanda",
+            "construction contractor Rwanda",
+            "construction products Rwanda",
+            "quality construction materials in Kigali",
+            "construction services in Kigali",
+          ]}
         />
         <ScrollToHash />
         <Navbar />

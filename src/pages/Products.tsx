@@ -10,9 +10,17 @@ const Products = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoMeta
-        title="Building Materials Products"
-        description="Browse Trust Construction Company Rwanda flooring, lighting, sanitary ware, ceiling panels, wall panels and interior finishing products."
+        title="Construction Materials & Building Supplies Rwanda"
+        description="Browse construction materials Rwanda, building materials Rwanda, flooring, lighting, sanitary ware, wall panels and home improvement materials available from Trust Construction Kigali."
         path="/products"
+        keywords={[
+          "construction materials Rwanda",
+          "building materials Rwanda",
+          "home materials Rwanda",
+          "building supplies Kigali",
+          "construction products Rwanda",
+          "quality construction materials in Kigali",
+        ]}
       />
       <Navbar />
 

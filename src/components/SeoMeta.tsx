@@ -7,6 +7,7 @@ type SeoMetaProps = {
   path: string;
   image?: string;
   type?: "website" | "article";
+  keywords?: string[];
 };
 
 export const SeoMeta = ({
@@ -15,6 +16,7 @@ export const SeoMeta = ({
   path,
   image = "/og-screenshot.png",
   type = "website",
+  keywords = [],
 }: SeoMetaProps) => {
   useEffect(() => {
     const canonicalUrl = `${siteConfig.url}${path}`;
@@ -40,6 +42,21 @@ export const SeoMeta = ({
       tag.setAttribute("content", content);
     };
 
+    const keywordList = [
+      "Trust Construction Rwanda",
+      "Trust Construction Ltd",
+      "Trust Construction Company",
+      "construction company in Rwanda",
+      "construction services Rwanda",
+      "construction materials Rwanda",
+      "building contractors Rwanda",
+      "building materials Rwanda",
+      "building supplies Kigali",
+      "home improvement materials Rwanda",
+      "construction company Kigali",
+      ...keywords,
+    ];
+
     let canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
     if (!canonical) {
       canonical = document.createElement("link");
@@ -51,6 +68,16 @@ export const SeoMeta = ({
     const descriptionTag = document.querySelector("meta[name='description']") as HTMLMetaElement | null;
     if (descriptionTag) {
       descriptionTag.setAttribute("content", description);
+    }
+
+    const keywordsTag = document.querySelector("meta[name='keywords']") as HTMLMetaElement | null;
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", keywordList.join(", "));
+    } else {
+      const tag = document.createElement("meta");
+      tag.name = "keywords";
+      tag.content = keywordList.join(", ");
+      document.head.appendChild(tag);
     }
 
     const titleTag = document.querySelector("meta[property='og:title']") as HTMLMetaElement | null;
@@ -80,7 +107,7 @@ export const SeoMeta = ({
     ensurePropertyMeta("og:url", canonicalUrl);
 
     setOrCreateMeta("meta[name='description']", "content", description);
-  }, [title, description, path, image, type]);
+  }, [title, description, path, image, type, keywords]);
 
   return null;
 };

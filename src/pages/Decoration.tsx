@@ -20,9 +20,16 @@ const Decoration = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoMeta
-        title="Interior Decoration Gallery"
-        description="Explore wall panels, ceiling panels, decorative finishes and home styling inspiration from Trust Construction Company Rwanda."
+        title="Interior Decoration & Home Improvement Materials Rwanda"
+        description="Explore interior decoration, wall panels, ceiling panels and home improvement materials from Trust Construction Rwanda for modern residential and commercial spaces."
         path="/decoration"
+        keywords={[
+          "home improvement materials Rwanda",
+          "interior construction Rwanda",
+          "modern construction Rwanda",
+          "construction solutions Rwanda",
+          "building supplies Rwanda",
+        ]}
       />
       <Navbar />
 

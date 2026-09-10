@@ -6,9 +6,17 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoMeta
-        title="Construction Supply & Installation Services"
-        description="Supply, installation, consultation and maintenance services for construction materials and interior finishing projects in Kigali, Rwanda."
+        title="Construction Services Rwanda & Kigali"
+        description="Trust Construction Rwanda provides construction services, building contractors support, renovation services, supply, installation and project consultation for residential and commercial projects in Kigali."
         path="/services"
+        keywords={[
+          "construction company Rwanda",
+          "construction company Kigali",
+          "construction services Rwanda",
+          "building contractors Rwanda",
+          "house construction Rwanda",
+          "renovation services Rwanda",
+        ]}
       />
       <Navbar />
       <main className="pt-28 pb-16 px-4">
