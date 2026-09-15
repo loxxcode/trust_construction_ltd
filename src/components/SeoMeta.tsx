@@ -8,6 +8,7 @@ type SeoMetaProps = {
   image?: string;
   type?: "website" | "article";
   keywords?: string[];
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 };
 
 export const SeoMeta = ({
@@ -17,6 +18,7 @@ export const SeoMeta = ({
   image = "/og-screenshot.png",
   type = "website",
   keywords = [],
+  structuredData,
 }: SeoMetaProps) => {
   useEffect(() => {
     const canonicalUrl = `${siteConfig.url}${path}`;
@@ -107,7 +109,25 @@ export const SeoMeta = ({
     ensurePropertyMeta("og:url", canonicalUrl);
 
     setOrCreateMeta("meta[name='description']", "content", description);
-  }, [title, description, path, image, type, keywords]);
+
+    const schemaId = "page-structured-data";
+    let schemaTag = document.getElementById(schemaId) as HTMLScriptElement | null;
+    if (structuredData) {
+      if (!schemaTag) {
+        schemaTag = document.createElement("script");
+        schemaTag.id = schemaId;
+        schemaTag.type = "application/ld+json";
+        document.head.appendChild(schemaTag);
+      }
+      schemaTag.textContent = JSON.stringify(structuredData);
+    } else {
+      schemaTag?.remove();
+    }
+
+    return () => {
+      document.getElementById(schemaId)?.remove();
+    };
+  }, [title, description, path, image, type, keywords, structuredData]);
 
   return null;
 };

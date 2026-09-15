@@ -38,6 +38,7 @@ export type ProductSchemaInput = {
   image: string;
   category: string;
   brand?: string;
+  path?: string;
 };
 
 export const buildOrganizationSchema = () => ({
@@ -88,6 +89,7 @@ export const buildLocalBusinessSchema = () => ({
 export const buildProductSchema = (product: ProductSchemaInput) => ({
   "@context": "https://schema.org",
   "@type": "Product",
+  "@id": product.path ? `${siteConfig.url}${product.path}#product` : undefined,
   name: product.name,
   description: product.description,
   image: product.image,
@@ -101,7 +103,24 @@ export const buildProductSchema = (product: ProductSchemaInput) => ({
     name: siteConfig.name,
     url: siteConfig.url,
   },
-  areaServed: "Rwanda",
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Kigali",
+      containedInPlace: { "@type": "Country", name: "Rwanda" },
+    },
+    { "@type": "Country", name: "Rwanda" },
+  ],
+  availableAtOrFrom: siteConfig.branches.map((branch) => ({
+    "@type": "Place",
+    name: `${siteConfig.name} - ${branch.branchName}`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: branch.address,
+      addressLocality: "Kigali",
+      addressCountry: "RW",
+    },
+  })),
 });
 
 export const buildPageMeta = ({ title, description, path }: PageMetaInput) => ({

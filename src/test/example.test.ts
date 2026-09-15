@@ -25,6 +25,10 @@ describe("example", () => {
     expect(organization.url).toContain("trustconstructionltd.com");
     expect(product.name).toBe("SPC Flooring");
     expect(product.category).toBe("Flooring");
+    expect(product.areaServed).toEqual(expect.arrayContaining([
+      expect.objectContaining({ name: "Kigali" }),
+    ]));
+    expect(product.availableAtOrFrom).toHaveLength(2);
     expect(meta.title).toContain("Trust Construction Company");
     expect(meta.description.length).toBeGreaterThan(40);
   });

@@ -5,6 +5,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { slugify } from "@/lib/utils";
 import { ProductCard } from "@/components/ProductCard";
+import { SeoMeta } from "@/components/SeoMeta";
+import { buildProductSchema, siteConfig } from "@/lib/seo";
 
 const findProductBySlug = (
   slug: string,
@@ -31,8 +33,41 @@ const ProductDetails = () => {
       .slice(0, 4);
   }
 
+  const productPath = slug ? `/products/${slug}` : "/products";
+  const productTitle = product
+    ? `${product.name} in Kigali, Rwanda`
+    : "Product Not Found";
+  const productDescription = product
+    ? `${product.name} for homes and construction projects in Kigali, Rwanda. ${product.description} Available from Trust Construction branches in Kicukiro and Gisozi.`
+    : "The requested Trust Construction product could not be found.";
+  const productImage = product?.image.startsWith("http")
+    ? product.image
+    : product
+      ? `${siteConfig.url}${product.image}`
+      : undefined;
+
   return (
     <div className="min-h-screen bg-background">
+      <SeoMeta
+        title={productTitle}
+        description={productDescription}
+        path={productPath}
+        image={productImage}
+        keywords={product ? [
+          product.name,
+          `${product.name} Kigali`,
+          `${product.name} Rwanda`,
+          `${product.category} Kigali`,
+          "construction materials Kigali",
+        ] : []}
+        structuredData={product ? buildProductSchema({
+          name: product.name,
+          description: productDescription,
+          image: productImage ?? product.image,
+          category: product.category ?? "Construction Materials",
+          path: productPath,
+        }) : undefined}
+      />
       <Navbar />
 
       <main className="pt-28 pb-16 px-4">
@@ -77,6 +112,9 @@ const ProductDetails = () => {
                       <p className="text-sm text-muted-foreground">{product.category}</p>
                       <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
                       <p className="text-foreground mb-6">{product.description}</p>
+                      <p className="text-sm text-muted-foreground mb-6">
+                        Available in Kigali, Rwanda at our Kicukiro and Gisozi branches.
+                      </p>
 
                       <div className="mb-2">
                         <h3 className="text-lg font-semibold mb-2">Features</h3>
